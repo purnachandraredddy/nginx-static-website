@@ -1,0 +1,25 @@
+# Ignore Docker config files
+Dockerfile
+.dockerignore
+
+# Ignore Git repo files
+.git
+.gitignore
+
+# Ignore documentation files
+README.md
+LICENSE
+CHANGELOG.md
+
+# Ignore OS / editor files
+*.swp
+*.tmp
+*.log
+*.DS_Store
+Thumbs.db
+
+# Ignore node / build files (if you have them)
+node_modules
+dist
+build
+

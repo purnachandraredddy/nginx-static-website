@@ -780,4 +780,121 @@ html {
     .about-card p {
         font-size: 0.98rem;
     }
+}
+
+.modern-experience {
+    background: linear-gradient(120deg, #181f2a 0%, #232946 100%);
+    padding: 90px 0 100px 0;
+    color: #f3f6fa;
+}
+
+.exp-title {
+    color: #fbbf24;
+    letter-spacing: 0.5px;
+    margin-bottom: 2.5rem;
+}
+
+.exp-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.exp-card {
+    background: linear-gradient(120deg, #232946 60%, #181f2a 100%);
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.18);
+    padding: 2.2rem 2rem 2rem 2rem;
+    min-width: 320px;
+    max-width: 400px;
+    flex: 1 1 340px;
+    border: 1.5px solid #2e3650;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    z-index: 2;
+}
+
+.exp-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 16px 40px rgba(80, 200, 255, 0.18);
+    border-color: #fbbf24;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+
+.exp-role {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fbbf24;
+}
+
+.exp-company {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #a5b4fc;
+}
+
+.exp-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.98rem;
+    color: #bfc9e0;
+    margin-bottom: 1.2rem;
+    opacity: 0.85;
+}
+
+.exp-achievements {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.exp-achievements li {
+    margin-bottom: 1.1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7rem;
+    font-size: 1.05rem;
+    color: #f3f6fa;
+    line-height: 1.6;
+}
+
+.exp-ico {
+    font-size: 1.2em;
+    margin-right: 0.2em;
+    vertical-align: middle;
+    opacity: 0.92;
+}
+
+.exp-divider {
+    width: 2px;
+    background: linear-gradient(180deg, #fbbf24 0%, #232946 100%);
+    min-height: 220px;
+    align-self: center;
+    border-radius: 2px;
+    box-shadow: 0 0 8px #fbbf2433;
+    margin: 0 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .exp-cards {
+        flex-direction: column;
+        gap: 2.5rem;
+        align-items: center;
+    }
+    .exp-divider {
+        display: none;
+    }
+    .exp-card {
+        min-width: 0;
+        max-width: 95vw;
+    }
 } 

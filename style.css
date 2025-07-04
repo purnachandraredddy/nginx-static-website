@@ -696,4 +696,88 @@ section {
 /* Smooth scrolling for anchor links */
 html {
     scroll-padding-top: 80px;
+}
+
+.vibrant-about {
+    background: linear-gradient(135deg, #e0f7fa 0%, #f3e7ff 100%);
+    padding: 80px 0 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.about-card {
+    background: linear-gradient(120deg, #fffbe7 0%, #e0ffe7 100%);
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+    padding: 2.2rem 2rem 2rem 2rem;
+    max-width: 370px;
+    min-width: 270px;
+    flex: 1 1 300px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1.5px solid #e0e7ff;
+    position: relative;
+}
+
+.about-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 16px 40px rgba(80, 200, 255, 0.18);
+    border-color: #a5b4fc;
+}
+
+.about-card-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 1.1rem;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Poppins', 'Inter', Arial, sans-serif;
+}
+
+.about-card p {
+    font-size: 1.08rem;
+    color: #374151;
+    line-height: 1.7;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.icon {
+    font-size: 1.3em;
+    vertical-align: middle;
+}
+
+@media (max-width: 900px) {
+    .about-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .about-card {
+        max-width: 95vw;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .vibrant-about {
+        padding: 50px 0 60px 0;
+    }
+    .about-card {
+        padding: 1.3rem 1rem 1.2rem 1rem;
+    }
+    .about-card-title {
+        font-size: 1.1rem;
+    }
+    .about-card p {
+        font-size: 0.98rem;
+    }
 } 
